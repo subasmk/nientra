@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nientra — Websites, AI Assistants & Automation | Coimbatore</title>
 <meta name="description" content="Nientra builds websites, AI chat assistants and automations for local businesses. Work less. Win more. Coimbatore, India.">
+<meta property="og:title" content="Nientra — Work Less. Win More.">
+<meta property="og:description" content="Websites, AI chat assistants & automation for local businesses. Start with a ₹999 pilot.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nientra.xyz">
+<meta name="theme-color" content="#e63329">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23e63329' stroke='%23131313' stroke-width='4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -34,7 +40,20 @@ nav{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:3px s
 #menuBtn{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
 /* hero */
 .hero{position:relative;overflow:hidden;padding:74px 0 84px;border-bottom:3px solid var(--ink)}
-.rays{position:absolute;inset:-40% -10% auto;height:900px;pointer-events:none;opacity:.5;
+.rays{position:absolute;inset:-40% -10% auto;height:900px;pointer-events:none;opacity:.5;transform-origin:72% 22%;animation:spin 140s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stamp{position:absolute;top:392px;right:6%;width:118px;height:118px;z-index:3;animation:spin 24s linear infinite reverse}
+.moments{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}
+.mom{border:3px solid var(--ink);background:#fff}
+.mom img{display:block;width:100%;height:190px;object-fit:contain;background:#fdfbf7}
+.mom .mc{border-top:3px solid var(--ink);padding:.6rem .9rem;font-family:Anton;letter-spacing:.08em;display:flex;justify-content:space-between}
+.mom .mc i{color:var(--red);font-style:normal}
+form.enq{max-width:560px;margin:30px auto 0;text-align:left}
+form.enq label{display:block;font-weight:800;letter-spacing:.12em;font-size:.78rem;margin:16px 0 6px;color:#fff}
+form.enq input,form.enq select,form.enq textarea{width:100%;padding:.8rem .9rem;border:3px solid #fff;background:transparent;color:#fff;font:600 1rem Archivo;border-radius:0}
+form.enq select option{color:#131313}
+form.enq input::placeholder,form.enq textarea::placeholder{color:#9a9a9a}
+.barcode{width:150px;height:34px;background:repeating-linear-gradient(90deg,#fff 0 2px,transparent 2px 5px,#fff 5px 6px,transparent 6px 10px,#fff 10px 13px,transparent 13px 15px)}
   background:repeating-conic-gradient(from -90deg at 72% 30%,rgba(19,19,19,.055) 0 7deg,transparent 7deg 14deg);
   -webkit-mask-image:radial-gradient(closest-side at 72% 30%,#000,transparent);mask-image:radial-gradient(closest-side at 72% 30%,#000,transparent)}
 .sun{position:absolute;top:44px;right:4%;width:min(390px,58vw);aspect-ratio:1;border-radius:50%;
@@ -118,7 +137,7 @@ footer{background:var(--ink);color:#fff;border-top:4px solid var(--red);padding:
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .rv.on{opacity:1;transform:none}
 @media(max-width:920px){.work,.duo,.pilot .in{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.row{grid-template-columns:64px 1fr}.row .pr{grid-column:2;text-align:left}}
-@media(max-width:640px){.steps{grid-template-columns:1fr}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:var(--paper);flex-direction:column;padding:16px 22px;border-bottom:3px solid var(--ink)}.nav-links.open{display:flex}#menuBtn{display:block}.sun{opacity:.85}}
+@media(max-width:640px){.steps{grid-template-columns:1fr}.moments{grid-template-columns:1fr}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:var(--paper);flex-direction:column;padding:16px 22px;border-bottom:3px solid var(--ink)}.nav-links.open{display:flex}#menuBtn{display:block}.sun{opacity:.85}.stamp{display:none}}
 </style>
 </head>
 <body>
@@ -138,6 +157,7 @@ footer{background:var(--ink);color:#fff;border-top:4px solid var(--red);padding:
 
 <header class="hero" id="top">
   <div class="rays"></div><div class="sun"></div>
+  <svg class="stamp" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="cir" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><circle cx="60" cy="60" r="58" fill="#131313"/><text fill="#fff" font-family="Archivo" font-weight="800" font-size="12.5" letter-spacing="3.5"><textPath href="#cir">NIENTRA ★ EST. 2026 ★ COIMBATORE ★ </textPath></text><text x="60" y="70" text-anchor="middle" fill="#e63329" font-family="Anton" font-size="26">N</text></svg>
   <div class="wrap hero-in">
     <p class="jp">ニエントラ / Startup — Coimbatore</p>
     <h1 class="ant">Work<br>Less.<br><span class="bar">Win More.</span></h1>
@@ -196,6 +216,7 @@ footer{background:var(--ink);color:#fff;border-top:4px solid var(--red);padding:
       <p class="jp" style="color:#fff">まず小さく / Start small</p>
       <h2 style="margin-top:10px">Don't take our word.<br><span class="blk">Take a pilot.</span></h2>
       <p>One page for your business, or one week of an AI assistant answering your real customer questions. If it doesn't help, we stop there — you've risked less than a family dinner.</p>
+      <p style="margin-top:10px;font-size:.95rem">Tamil la pesalam — no problem. English, Tamil, rendume ok.</p>
       <a class="btn" href="#contact" style="margin-top:22px;background:#fff;color:var(--ink);box-shadow:7px 7px 0 var(--ink)">Claim the pilot →</a>
     </div>
     <div class="amt rv">₹999<small>ONE PAGE · OR · 1-WEEK TRIAL</small></div>
@@ -210,7 +231,7 @@ footer{background:var(--ink);color:#fff;border-top:4px solid var(--red);padding:
     <div class="work">
       <div class="frame rv">
         <div class="bar2"><span>SHIBA DESKTOP</span><span>OUR PRODUCT</span></div>
-        <img src="https://raw.githubusercontent.com/subasmk/shiba-desktop/main/idle_breathe.gif" alt="Shiba Desktop — the AI pet, breathing idle animation">
+        <img loading="lazy" src="https://raw.githubusercontent.com/subasmk/shiba-desktop/main/idle_breathe.gif" alt="Shiba Desktop — the AI pet, breathing idle animation">
         <div class="cap">
           <h3>An AI companion for your PC</h3>
           <p>It lives on your desktop, listens, talks back in English, Tamil and Tanglish, remembers what matters, and does small jobs on your computer. Free, open source, and everything runs on your own machine — no account, nothing uploaded.</p>
@@ -230,6 +251,11 @@ footer{background:var(--ink);color:#fff;border-top:4px solid var(--red);padding:
           <p style="margin-top:12px"><a class="lnk" href="https://github.com/subasmk" target="_blank" rel="noopener">GitHub →</a> &nbsp; <a class="lnk" href="https://subashmk.xyz" target="_blank" rel="noopener">Founder's portfolio →</a></p>
         </div>
       </div>
+    </div>
+    <div class="moments">
+      <div class="mom rv"><img loading="lazy" src="https://raw.githubusercontent.com/subasmk/shiba-desktop/main/summon.gif" alt="Shiba appears when called"><div class="mc"><span>IT LISTENS</span><i>聞く</i></div></div>
+      <div class="mom rv"><img loading="lazy" src="https://raw.githubusercontent.com/subasmk/shiba-desktop/main/celebrate_jump.gif" alt="Shiba celebrates a finished focus session"><div class="mc"><span>IT CELEBRATES</span><i>祝う</i></div></div>
+      <div class="mom rv"><img loading="lazy" src="https://raw.githubusercontent.com/subasmk/shiba-desktop/main/hacking.gif" alt="Shiba at work on the computer"><div class="mc"><span>IT WORKS</span><i>働く</i></div></div>
     </div>
   </div>
 </section>
@@ -272,10 +298,26 @@ footer{background:var(--ink);color:#fff;border-top:4px solid var(--red);padding:
     <p class="jp">連絡 / Contact</p>
     <h2 style="margin-top:14px">Say hi.</h2>
     <p>Tell us what your business does and what wastes your time. You'll hear back within a day — with a demo before any big decision.</p>
-    <div style="margin-top:30px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap">
-      <a class="btn red" href="mailto:mksubash2809@gmail.com?subject=Project%20enquiry%20for%20Nientra&body=Hi%20Subash%2C%0A%0AMy%20business%3A%20%0AWhat%20I%20need%3A%20">Email your project →</a>
-      <a class="btn" href="https://github.com/subasmk" target="_blank" rel="noopener" style="background:#fff;color:var(--ink)">GitHub</a>
-    </div>
+    <form class="enq" id="enq">
+      <label for="f-name">YOUR NAME</label>
+      <input id="f-name" required placeholder="e.g. Karthik">
+      <label for="f-biz">YOUR BUSINESS</label>
+      <input id="f-biz" required placeholder="e.g. Karthik Coaching Centre, Peelamedu">
+      <label for="f-need">WHAT DO YOU NEED?</label>
+      <select id="f-need">
+        <option>A website for my business</option>
+        <option>An AI assistant to answer customers</option>
+        <option>Automation for repeated work</option>
+        <option>The ₹999 pilot first</option>
+        <option>Something else</option>
+      </select>
+      <label for="f-msg">ANYTHING ELSE? (OPTIONAL)</label>
+      <textarea id="f-msg" rows="3" placeholder="Timings, budget, deadline — anything that helps"></textarea>
+      <div style="text-align:center;margin-top:24px">
+        <button class="btn red" type="submit">Send enquiry →</button>
+      </div>
+      <p style="font-size:.85rem;margin-top:14px;text-align:center">Opens your email app with everything filled in. Prefer GitHub? <a class="lnk" style="color:#ff6b61;border-color:#ff6b61" href="https://github.com/subasmk" target="_blank" rel="noopener">github.com/subasmk</a></p>
+    </form>
     <p style="margin-top:22px;font-size:.92rem">Coimbatore, Tamil Nadu — working with clients anywhere.</p>
   </div>
 </section>
@@ -283,6 +325,7 @@ footer{background:var(--ink);color:#fff;border-top:4px solid var(--red);padding:
 <footer>
   <div class="wrap foot-in">
     <span>© 2026 NIENTRA · SUBASH M.</span>
+    <span class="barcode" aria-hidden="true"></span>
     <span class="ant" style="letter-spacing:.1em">WORK LESS. WIN MORE.</span>
   </div>
 </footer>
@@ -295,6 +338,15 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 const mb=document.getElementById('menuBtn'),nl=document.getElementById('navLinks');
 mb.addEventListener('click',()=>nl.classList.toggle('open'));
 nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nl.classList.remove('open')));
+document.getElementById('enq').addEventListener('submit',e=>{
+  e.preventDefault();
+  const n=document.getElementById('f-name').value.trim(),
+        b=document.getElementById('f-biz').value.trim(),
+        w=document.getElementById('f-need').value,
+        m=document.getElementById('f-msg').value.trim();
+  const body=encodeURIComponent("Hi Subash,\n\nName: "+n+"\nBusiness: "+b+"\nI need: "+w+(m?"\n\n"+m:"")+"\n");
+  location.href="mailto:mksubash2809@gmail.com?subject="+encodeURIComponent("Project enquiry — "+b)+"&body="+body;
+});
 </script>
 </body>
 </html>
